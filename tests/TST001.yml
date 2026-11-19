@@ -10,6 +10,10 @@ preuve: |
   - preuves/tst001_photo_scan.jpg
 ref: ''
 resultat_observe: |
+  Date : 19/11/2026
+  Heure : 16h28
+  Opérateur : David
+
   - Scénario 1 (connue) : ACCÈS AUTORISÉ ! Utilisateur ID #1, LED verte allumée
   - Scénario 2 (inconnue) : ACCÈS REFUSÉ ! LED rouge allumée
 reviewed: 7qCPnimx4K_59si699AYJ8iiGm9DcaDtjDrlHbeIebo=

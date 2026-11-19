@@ -7,13 +7,20 @@ links:
 - REQ003: mXztB1787avQdOov6d38y_P1FTTsz9qIuDo71fVbqiQ=
 normative: true
 preuve: |
-  Aucune (test non encore exécuté)
+  - preuves/tst003_tst004_gache_relais.mp4 (00:00 à 00:09)
 ref: ''
 resultat_observe: |
-  non exécuté
+  Date : 19/11/2026
+  Heure : 16h28
+  Opérateur : David
+
+  Présentation d'une empreinte autorisée en mode scan :
+  - Activation de la LED verte et du relais (clic audible + témoin du module relais allumé).
+  - Déverrouillage effectif de la gâche électrique pendant environ 3 secondes.
+  - Reverrouillage automatique de la gâche à la retombée du relais.
 reviewed: bI-Dv4meLQrpQSBijElpcCKOY0snRdx-hkbeyX1xoNg=
 text: |
   Action : Présenter une empreinte autorisée en mode scan.
   Résultat attendu : Activation du relais (broche 6 à HIGH) pendant 3 secondes, puis retour automatique à l'état verrouillé (LOW).
 verdict: |
-  NON EXÉCUTÉ - En attente de mesure sur le relais (broche 6).
+  CONFORME - La gâche électrique se déverrouille bien via le relais lors d'un accès autorisé puis se reverrouille automatiquement après ~3 s.
