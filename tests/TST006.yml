@@ -1,0 +1,22 @@
+active: true
+derived: false
+header: |
+  Test de gestion des utilisateurs (mode Administrateur)
+level: 1.5
+links:
+- REQ006: _dzqhdhNcwaYLt7-Gu2K-i7hNW0QOmpkdF6hz6Y5T_0=
+normative: true
+preuve: |
+  Aucune (test non encore exécuté)
+ref: ''
+resultat_observe: |
+  - Scénario 1 : non exécuté
+  - Scénario 2 : non exécuté
+  - Scénario 3 : non exécuté
+reviewed: H2n4bIlMZZzLkbhwuo0ekmyLESvJL1sZA4A_oXUSWPE=
+text: |
+  Scénario 1 - Accès Admin : appuyer sur le bouton (broche 7) et s'authentifier avec une empreinte Admin (ID 1-10).
+  Scénario 2 - Refus Employé : appuyer sur le bouton (broche 7) et présenter une empreinte Employé (ID 11-127) -> accès au menu refusé.
+  Scénario 3 - Ajout/Suppression : ajouter une nouvelle empreinte puis la supprimer via le menu série.
+verdict: |
+  NON EXÉCUTÉ - En attente d'exécution du mode Administrateur.

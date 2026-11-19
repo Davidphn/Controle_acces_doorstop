@@ -1,0 +1,19 @@
+active: true
+derived: false
+header: |
+  Test de maintien du verrouillage en cas de refus
+level: 1.3
+links:
+- REQ004: zS2ZvtrvqVKHyPuzMIkbepUD2LnzRAfUkFMz8e087Yc=
+normative: true
+preuve: |
+  Aucune (test non encore exécuté)
+ref: ''
+resultat_observe: |
+  non exécuté
+reviewed: 3IA_HvRo8oab_7sXnMnU8czqqM9lERX00lI0-dXnoh8=
+text: |
+  Action : Présenter une empreinte inconnue en mode scan.
+  Résultat attendu : Le relais (broche 6) reste strictement à l'état bas (LOW) sans déclenchement.
+verdict: |
+  NON EXÉCUTÉ - En attente de vérification sur le relais (broche 6).

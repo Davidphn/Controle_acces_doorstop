@@ -1,0 +1,20 @@
+active: true
+derived: false
+header: |
+  Test d'indication visuelle et série du statut d'accès
+level: 1.4
+links:
+- REQ005: bSDBNLEX3hSaJRDlvXGrU0Ju9nv8rv2ztrWpQx81wiU=
+normative: true
+preuve: |
+  Aucune (test non encore exécuté)
+ref: ''
+resultat_observe: |
+  - Scénario 1 : non exécuté
+  - Scénario 2 : non exécuté
+reviewed: zemXnPbt-6Y9W_TRv6JsImjp3IXtuwt5qE1q_TGm06U=
+text: |
+  Scénario 1 - Accès accepté : vérifier l'allumage de la LED verte (broche 4) pendant 3 s et le message d'autorisation sur le moniteur série.
+  Scénario 2 - Accès refusé : vérifier l'allumage de la LED rouge (broche 5) pendant 1 s et le message de refus sur le moniteur série.
+verdict: |
+  NON EXÉCUTÉ - En attente de capture des LEDs et du moniteur série.

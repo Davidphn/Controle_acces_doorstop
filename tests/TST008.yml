@@ -1,0 +1,19 @@
+active: true
+derived: false
+header: |
+  Test de capacité de la base d'utilisateurs
+level: 1.7
+links:
+- REQ008: D8PQNX4WcsMr0CiBk32TYhgafguQSr58VsaRbZ_d5H4=
+normative: true
+preuve: |
+  Aucune (test non encore exécuté)
+ref: ''
+resultat_observe: |
+  non exécuté
+reviewed: 5NYCFQzXIz4zx8LJOS8hYIoFZpR-MRhxbx72iO5ukVU=
+text: |
+  Action : Vérifier la capacité de stockage d'empreintes du capteur AS608 et enregistrer plusieurs profils (Admin et Employés).
+  Critère : Capacité >= N utilisateurs (valeur de N à confirmer avec le client ; capacité matérielle max = 127).
+verdict: |
+  NON EXÉCUTÉ - En attente de confirmation de la valeur N avec le client.

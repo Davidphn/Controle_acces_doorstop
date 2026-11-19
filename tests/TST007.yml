@@ -1,0 +1,19 @@
+active: true
+derived: false
+header: |
+  Test du temps de décision
+level: 1.6
+links:
+- REQ007: rVPrWc1bTEckqXZeLZo_VAAp6cDXV8GU84TGcxtt3zE=
+normative: true
+preuve: |
+  Aucune (test non encore exécuté)
+ref: ''
+resultat_observe: |
+  non exécuté
+reviewed: bucBjTG4-z1UOQvtMi4vQY8SKJLOLA6_eUpqU2Yz2vg=
+text: |
+  Action : Chronométrer le délai entre la pose du doigt sur le capteur AS608 et la réaction du système (message série + LED/relais).
+  Critère : Temps mesuré < X secondes (valeur de X à confirmer avec le client).
+verdict: |
+  NON EXÉCUTÉ - En attente de confirmation de la valeur X et de mesure chronométrée.
