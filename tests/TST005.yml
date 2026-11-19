@@ -1,20 +1,31 @@
+Conclusion: conforme pour la commande du hublot vert par le relais.
 active: true
 derived: false
-header: |
-  Test d'indication visuelle et série du statut d'accès
-level: 1.4
+header: ''
+level: 1.0
 links:
-- REQ005: bSDBNLEX3hSaJRDlvXGrU0Ju9nv8rv2ztrWpQx81wiU=
+- REQ005: AwIqUnrlRHYzSuLOCpEtc0g2ymeYAqQRSr6O7qUvctc=
 normative: true
-preuve: |
-  Aucune (test non encore exécuté)
+preuve:
+- preuves/TST005/code_relais_hublots.txt
+- preuves/TST005/TST005_hublot_vert.jpg
+- preuves/TST005/TST005_hublot_bleu.jpg
 ref: ''
-resultat_observe: |
-  - Scénario 1 : non exécuté
-  - Scénario 2 : non exécuté
-reviewed: zemXnPbt-6Y9W_TRv6JsImjp3IXtuwt5qE1q_TGm06U=
+resultat observé: |
+  Quand l’empreinte enregistrée est reconnue, le relais SRD-05VDC-SL-C commandé par la broche D7 bascule. Le contact COM–NO se ferme et le hublot vert Legrand 0 785 62, alimenté en 12 V, s’allume. Le second hublot, câblé sur NC, est éteint pendant ce temps. Le hublot vert s’éteint au bout de 2 s, quand le relais revient au repos.
+reviewed: fDh_HFWBy-KSR_UdV71i64WiHqlTx64zSxjlzTkMeVI=
 text: |
-  Scénario 1 - Accès accepté : vérifier l'allumage de la LED verte (broche 4) pendant 3 s et le message d'autorisation sur le moniteur série.
-  Scénario 2 - Accès refusé : vérifier l'allumage de la LED rouge (broche 5) pendant 1 s et le message de refus sur le moniteur série.
-verdict: |
-  NON EXÉCUTÉ - En attente de capture des LEDs et du moniteur série.
+  Date : 18/11/2026
+  OPERATEUR : Maika
+
+  Vérifier que le système indique si l'accès est accepté ou refusé à l'aide des hublots.
+
+  1. Présenter un identifiant connu : vérifier que le hublot vert s'allume lorsque l'empreinte est reconnu  (accès accepté).
+  2. Présenter un identifiant inconnu : vérifier que le hublot bleu s'allume lorsque l'empreinte n'est pas reconnu (accès refusé).
+
+  ![code](../../preuves/TST005/code_relais_hublots.txt)
+
+  ![Hublot bleu](../../preuves/TST005/TST005_hublot_vert.jpg)
+
+  ![Hublot bleu](../../preuves/TST005/TST005_hublot_bleu.jpg)
+verdict: reussi
