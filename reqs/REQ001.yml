@@ -1,0 +1,13 @@
+active: true
+derived: false
+header: |
+  Identification de l'utilisateur
+level: 1.0
+links: []
+normative: true
+ref: ''
+reviewed: CU9_SSLYKDtIZjuovV2NoTLI_112a8kfx5DuwGRVqRc=
+text: |
+  Le système doit identifier un utilisateur à partir de son empreinte digitale :
+  - Empreinte connue : accès autorisé (affichage de l'ID sur le moniteur série, LED verte + relais actifs pendant 3 s).
+  - Empreinte inconnue : accès refusé (message de refus sur le moniteur série, LED rouge active pendant 1 s, relais inactif).

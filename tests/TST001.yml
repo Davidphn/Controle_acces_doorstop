@@ -1,0 +1,20 @@
+active: true
+derived: false
+header: |
+  Test d'identification utilisateur (connue / inconnue)
+level: 1.0
+links:
+- REQ001: CU9_SSLYKDtIZjuovV2NoTLI_112a8kfx5DuwGRVqRc=
+normative: true
+preuve: |
+  - preuves/tst001_photo_scan.jpg
+ref: ''
+resultat_observe: |
+  - Scénario 1 (connue) : ACCÈS AUTORISÉ ! Utilisateur ID #1, LED verte allumée
+  - Scénario 2 (inconnue) : ACCÈS REFUSÉ ! LED rouge allumée
+reviewed: 7qCPnimx4K_59si699AYJ8iiGm9DcaDtjDrlHbeIebo=
+text: |
+  Scénario 1 - Empreinte connue : poser un doigt enregistré sur le capteur AS608 en mode scan.
+  Scénario 2 - Empreinte inconnue : poser un doigt non enregistré sur le capteur AS608 en mode scan.
+verdict: |
+  CONFORME - Les deux scénarios (empreinte connue ID #1 et empreinte inconnue) produisent les messages attendus sur le moniteur série et activent les LEDs correspondantes.
