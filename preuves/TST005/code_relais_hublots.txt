@@ -1,0 +1,69 @@
+=====================================================================
+ PARTIES DU CODE POUR LE RELAIS ET LES HUBLOTS
+ Relais SRD-05VDC-SL-C : IN -> D7, VCC -> 5V, GND -> GND
+ Côté 12 V : +12V -> COM ; NO -> hublot VERT ; NC -> hublot ROUGE ;
+             autre borne des deux hublots -> 0V
+=====================================================================
+
+
+---------------------------------------------------------------------
+ A) PROGRAMME DE TEST DU RELAIS SEUL (sans le capteur)
+    À téléverser seul pour vérifier le câblage :
+    le relais doit claquer et les hublots alterner toutes les 2 s.
+---------------------------------------------------------------------
+
+#define RELAIS        7      // broche IN du module relais
+#define RELAIS_ACTIF  HIGH   // mettre LOW si le vert reste allumé au repos
+#define RELAIS_REPOS  (RELAIS_ACTIF == HIGH ? LOW : HIGH)
+
+void setup() {
+  digitalWrite(RELAIS, RELAIS_REPOS);
+  pinMode(RELAIS, OUTPUT);
+  Serial.begin(9600);
+  Serial.println(F("Test du relais"));
+}
+
+void loop() {
+  digitalWrite(RELAIS, RELAIS_ACTIF);
+  Serial.println(F("Relais ACTIF : hublot VERT"));
+  delay(2000);
+
+  digitalWrite(RELAIS, RELAIS_REPOS);
+  Serial.println(F("Relais REPOS : hublot ROUGE"));
+  delay(2000);
+}
+
+
+---------------------------------------------------------------------
+ B) LES 3 PARTIES AJOUTÉES DANS LE PROGRAMME PRINCIPAL
+---------------------------------------------------------------------
+
+// 1. En haut du code, avec les autres #define :
+
+#define RELAIS        7      // broche IN du module relais
+#define RELAIS_ACTIF  HIGH   // mettre LOW si le vert reste allumé en permanence
+#define RELAIS_REPOS  (RELAIS_ACTIF == HIGH ? LOW : HIGH)
+#define DUREE_OUVERT  2000   // durée du vert en ms
+
+
+// 2. Au début de setup() :
+
+  digitalWrite(RELAIS, RELAIS_REPOS);   // repos avant d'activer la sortie
+  pinMode(RELAIS, OUTPUT);
+  // Test au démarrage : le relais claque, vert 0,5 s puis rouge
+  digitalWrite(RELAIS, RELAIS_ACTIF);
+  delay(500);
+  digitalWrite(RELAIS, RELAIS_REPOS);
+
+
+// 3. Dans identify() :
+
+  if (finger.fingerFastSearch() == FINGERPRINT_OK) {
+    // ... affichage du nom ...
+    digitalWrite(RELAIS, RELAIS_ACTIF);   // relais collé : hublot VERT
+    delay(DUREE_OUVERT);
+    digitalWrite(RELAIS, RELAIS_REPOS);   // retour au repos : hublot ROUGE
+  } else {
+    Serial.println(F(">>> Accès refusé : empreinte inconnue"));
+    delay(1500);                          // le hublot rouge reste allumé
+  }
