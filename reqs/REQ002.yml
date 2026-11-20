@@ -1,9 +1,11 @@
 active: true
 derived: false
-header: ''
+header: |
+  Vérification de l'autorisation d'accès
 level: 1.1
 links: []
 normative: true
 ref: ''
 reviewed: 8VT4G_tSDEybwwWu4lzSYbWLPF6ZYL0TPWKEuQ-TvqY=
-text: ''
+text: |
+  Le système doit vérifier l'autorisation d'accès de l'utilisateur identifié en comparant son empreinte avec la base d'utilisateurs enregistrés (IDs 1 à 10 pour les administrateurs, IDs 11 à 127 pour les employés).

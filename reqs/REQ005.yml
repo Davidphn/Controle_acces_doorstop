@@ -1,9 +1,13 @@
 active: true
 derived: false
-header: ''
+header: |
+  Indication du statut d'accès
 level: 1.4
 links: []
 normative: true
 ref: ''
 reviewed: bSDBNLEX3hSaJRDlvXGrU0Ju9nv8rv2ztrWpQx81wiU=
-text: ''
+text: |
+  Le système doit indiquer si l'accès est accepté ou refusé[cite: 20] :
+  - Accès accepté : allumage de la LED verte (broche 4) et message d'autorisation sur le moniteur série.
+  - Accès refusé : allumage de la LED rouge (broche 5) pendant 1 seconde et message de refus sur le moniteur série.

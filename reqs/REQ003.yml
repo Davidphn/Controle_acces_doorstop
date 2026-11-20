@@ -1,9 +1,11 @@
 active: true
 derived: false
-header: ''
+header: |
+  Déverrouillage de la porte
 level: 1.2
 links: []
 normative: true
 ref: ''
 reviewed: mXztB1787avQdOov6d38y_P1FTTsz9qIuDo71fVbqiQ=
-text: ''
+text: |
+  Le système doit déverrouiller la porte si l'utilisateur est autorisé en activant le relais (broche 6) pendant 3 secondes avant de reverrouiller automatiquement.

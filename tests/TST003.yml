@@ -7,7 +7,7 @@ links:
 - REQ003: mXztB1787avQdOov6d38y_P1FTTsz9qIuDo71fVbqiQ=
 normative: true
 preuve: |
-  - preuves/tst003_tst004_gache_relais.mp4 (00:00 à 00:09)
+  - preuves/TST003/tst003_tst004_gache_relais.mp4 (00:00 à 00:09)
 ref: ''
 resultat_observe: |
   Date : 19/11/2026
